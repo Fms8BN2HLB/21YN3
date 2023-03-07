@@ -63,10 +63,10 @@
         let total_pages = 0;
         var t_image = (dir, filename) => `
             <div class="photo">                
-                <img src="${dir + filename}" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://moonstudio.site/moonstudio.png';" style="width: 20%; height: auto;">
+                <img src="${dir + '2/' + filename}" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://moonstudio.site/moonstudio.png';">
                 <div class="subphoto">
                     <h5 class='filename'>${filename.split('/')[1]}</h5>
-                    <a href="${dir + filename}" download>
+                    <a href="${dir + '1/'  + filename}" download>
                         <i class="fas fa-cloud-download-alt"></i>
                     </a>
                 </div>
